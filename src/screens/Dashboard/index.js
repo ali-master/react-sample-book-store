@@ -1,5 +1,6 @@
 import React from "react";
 
+// Local components
 import SideMenu from "./components/SideMenu";
 import Content from "./components/Content";
 
