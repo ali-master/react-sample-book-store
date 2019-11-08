@@ -1,8 +1,9 @@
-// import YDN from "ydn.db";
+import YDN from "ydn.db";
+import schema from "./schema";
 
 class Store {
 	constructor() {
-		// iniitize
+		this.db = new YDN.db.Storage("bookStore", schema);
 	}
 
 	get getAuthors() {}
