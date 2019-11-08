@@ -1,6 +1,5 @@
 import React from "react";
 import Dashboard from "./screens/Dashboard";
-
 import { BrowserRouter, Route } from "react-router-dom";
 
 import "./App.css";

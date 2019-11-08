@@ -3,8 +3,8 @@ import './index.scss';
 const Button = () => {
     return (
         <div>
-            <button>hey</button>
-        </div >
+			<button type="submit" className="btn btn-primary">Submit</button>
+		</div >
     )
 }
 
