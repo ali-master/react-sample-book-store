@@ -13,10 +13,10 @@ function SideMenu() {
 				<Link className="nav-link active" to="/dashboard/books">
 					Books
 				</Link>
-				<Link className="nav-link active" to="/dashboard/reads">
+				<Link className="nav-link active" to="/dashboard/book/reads">
 					read books
 				</Link>
-				<Link className="nav-link active" to="/dashboard/unreads">
+				<Link className="nav-link active" to="/dashboard/books/unreads">
 					unread books
 				</Link>
 			</nav>
