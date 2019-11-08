@@ -7,7 +7,7 @@ const Table = props => {
 	return (
 		<table class="table table-striped">
 			<thead>
-				<Header columns={props.columns} />
+				<Header columns={props.data} />
 			</thead>
 			<tbody>
 				{props.data.map((value, indx) => (
