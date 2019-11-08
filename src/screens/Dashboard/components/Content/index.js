@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
+// Styles
+import styles from "./index.module.scss";
 
 function Content() {
-  return (
-   <div>content</div>
-  );
+	return <div className={styles["content"]}>content</div>;
 }
 export default Content;
