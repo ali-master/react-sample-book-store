@@ -1,10 +1,13 @@
 import React from 'react';
 import './index.scss';
-const Button = () => {
+
+const Button = props => {
+    function onClick(e) {
+        props.onClick && props.onClick(e)
+    }
+
     return (
-        <div>
-			<button type="submit" className="btn btn-primary">Submit</button>
-		</div >
+        <button type="submit" className="btn btn-primary" onClick={onClick}>{props.children || "Submit"}</button>
     )
 }
 

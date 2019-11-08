@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import Table from './components/Table/'
-import booksData from '../../../../db/db.json';
+import React, { useEffect } from "react";
+import AddBook from "./components/AddBook";
 
 const Books = () => {
-    return (
-        <Table data={booksData.books} />
-    )
-}
+	return (
+		<div>
+			<AddBook />
+		</div>
+	);
+};
 
 export default Books;

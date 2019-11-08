@@ -1,12 +1,13 @@
 import React from "react";
 
 const Row = props => {
+	const columns = Object.keys(props.info);
+
 	return (
 		<tr>
-			<th scope="row">1</th>
-			<td>{props.authorInfo.firstName}</td>
-			<td>{props.authorInfo.lastName}</td>
-			<td>{props.authorInfo.active ? "Yes" : "NO"}</td>
+			{columns.map((column, index) => {
+				return <td key={index}>{props.info[column]}</td>;
+			})}
 		</tr>
 	);
 };
