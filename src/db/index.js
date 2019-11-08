@@ -52,12 +52,20 @@ class Store {
 			created_at: new Date(),
 		});
 	}
+
+	async deleteBook(id) {
+		return await this.db.book.delete(id);
+	}
+
+	async getBook(bookId) {
+		return await this.db.book.get({ id: bookId });
+	}
+
+	async updateBook(id, data) {
+		return await this.db.book.update(id, { ...data, updated_at: new Date() });
+	}
 }
 
 const StoreDB = new Store();
-
-//StoreDB.addAuthor({ name: "J.K. Rowling", surename: "Rowling" });
-// StoreDB.getAuthors().then(console.log);
-// StoreDB.getAuthor(1).then(console.log);
 
 export default StoreDB;
