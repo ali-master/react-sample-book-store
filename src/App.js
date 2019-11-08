@@ -1,13 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Authors from  './screens/Dashboard/screens/Authors'
+import React from "react";
+import Dashboard from "./screens/Dashboard";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import "./App.css";
+
 function App() {
-  return (
-    <div className="App">
-    <Authors/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Route path="/" component={Dashboard} />
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

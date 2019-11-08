@@ -1,14 +1,13 @@
 import React from 'react'
-import Input from './../../../../components/Input/'
+import FormGroup from './../../../../components/FormGroup/'
+import Button from './../../../../components/Button/'
 
  function Authors(){
     return(
         <form>
-            <Input name="Name"/>
-			<Input name="Family"/>
-			<Input name="Email"/>
-		    <Input name="Password"/>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <FormGroup name="Name"/>
+			<FormGroup name="surename"/>
+			<Button />
         </form>
 
     )

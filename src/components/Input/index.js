@@ -1,13 +1,11 @@
 
 import React from 'react';
 
-const Input = () => {
+const Input = (props) => {
 	return (
 
-		   <div className="form-group">
-			    <label htmlFor="exampleInputPassword1">{this.props.name}</label>
-			    <input type="text" name={this.props.name} className="form-control"/>
-		   </div>
+			<input type="text" name={props.name} className="form-control"/>
+
 
 	)
 }
