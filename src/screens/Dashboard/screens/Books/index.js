@@ -4,7 +4,7 @@ const Books = ({ data }) => {
 
     return (
         <div >
-            {data}
+            {JSON.stringify(data)}
         </div>
     )
 }
