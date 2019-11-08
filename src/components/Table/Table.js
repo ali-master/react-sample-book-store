@@ -5,13 +5,13 @@ import Header from "./Header/Header";
 
 const Table = props => {
 	return (
-		<table class="table table-striped">
+		<table className="table table-striped">
 			<thead>
-				<Header columns={props.data} />
+				<Header columns={props.data} base={props.base} />
 			</thead>
 			<tbody>
 				{props.data.map((value, indx) => (
-					<Row key={indx} authorInfo={value} readOnly />
+					<Row key={indx} info={value} />
 				))}
 			</tbody>
 		</table>
