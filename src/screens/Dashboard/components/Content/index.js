@@ -3,7 +3,6 @@ import Authors from "../../screens/Authors";
 import { Route, Switch } from "react-router-dom";
 import cs from "classnames";
 import Books from "../../screens/Books/index.js";
-
 // Styles
 import styles from "./index.module.scss";
 
