@@ -8,7 +8,7 @@ import styles from "./index.module.scss";
 function Content() {
 	return (
 		<div className={cs(styles["content"], "container")}>
-			<div className="row">
+			<div className="row justify-content-center">
 				<Route path="/dashboard/authors" component={Authors} />
 			</div>
 		</div>
