@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route path="/" component={Dashboard} />
+        <Route path="/dashboard" component={Dashboard} />
+
       </BrowserRouter>
     </div>
   );

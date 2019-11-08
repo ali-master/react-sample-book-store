@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Table from './components/Table/'
+import booksData from '../../../../db/db.json';
 
-const Books = ({ data }) => {
-
+const Books = () => {
     return (
-        <div >
-            {JSON.stringify(data)}
-        </div>
+        <Table data={booksData.books} />
     )
 }
 

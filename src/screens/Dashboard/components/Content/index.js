@@ -1,11 +1,13 @@
 import React from 'react';
-import Books from '../../screens/Books/';
-import booksData from '../../../../db/db.json';
+import { Route, Switch } from "react-router-dom";
+import Books from '../../screens/Books/index.js';
 
 function Content() {
   return (
     <div>
-      <Books data={booksData.books} />
+      <Switch>
+        <Route path="/dashboard/books" component={Books} />
+      </Switch>
     </div>
   );
 }
