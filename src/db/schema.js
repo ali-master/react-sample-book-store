@@ -21,6 +21,40 @@ var schema = {
 				},
 			],
 		},
+		{
+			name: "book",
+			keyPath: "id",
+			autoIncrement: true,
+			indexes: [
+				{
+					name: "title",
+				},
+				{
+					name: "description",
+				},
+				{
+					name: "created_at",
+				},
+				{
+					name: "updated_at",
+				},
+				{
+					name: "published_at",
+				},
+				{
+					name: "publisher",
+				},
+				{
+					name: "stars",
+				},
+				{
+					name: "isRead",
+				},
+				{
+					name: "ISBN10"
+				}
+			]
+		}
 	],
 };
 

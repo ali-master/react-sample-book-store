@@ -5,12 +5,12 @@ import Content from "./components/Content";
 
 function Dashboard() {
 	return (
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
+		<div className="container-fluid">
+			<div className="row">
+				<div className="col-lg-3">
 					<SideMenu />
 				</div>
-				<div class="col-lg-9">
+				<div className="col-lg-9">
 					<Content />
 				</div>
 			</div>
