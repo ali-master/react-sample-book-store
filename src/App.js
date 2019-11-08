@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -23,6 +24,23 @@ function App() {
       <Books data={"books"} />
     </div>
   );
+=======
+import React from "react";
+import Dashboard from "./screens/Dashboard";
+
+import { BrowserRouter, Route } from "react-router-dom";
+
+import "./App.css";
+
+function App() {
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Route path="/" component={Dashboard} />
+			</BrowserRouter>
+		</div>
+	);
+>>>>>>> c60bdcab9e04addea7ece15cc00120f27cf21d58
 }
 
 export default App;

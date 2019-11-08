@@ -1,0 +1,51 @@
+{
+	"authors": [
+		{
+			"id": "057209",
+			"name": "James",
+			"surename": "Smith",
+			"created_at": "2017-12-8",
+			"updated_at": "2017-12-8"
+		},
+		{
+			"id": "05709t4397209",
+			"name": "John",
+			"surename": "Doe",
+			"created_at": "2017-1-8",
+			"updated_at": "2017-16-8"
+		},
+		{
+			"id": "2387",
+			"name": "Adam",
+			"surename": "Smith",
+			"created_at": "2017-12-5",
+			"updated_at": "2017-12-7"
+		}
+	],
+	"books": [
+		{
+			"id": "97430",
+			"title": "The Secret Diary of Adrian Mole Aged 13 3/4 : Adrian Mole Book 1",
+			"description": "A satire of our times. Very funny indeed' Sunday Times. The Secret Diary of Adrian Mole Aged 13 3/4 is the first book in Sue Townsend's brilliantly funny Adrian Mole series.",
+			"created_at": "2017-12-5",
+			"updated_at": "2017-12-7",
+			"published_at": "2017-21-3",
+			"publisher": "05709t4397209",
+			"stars": 20,
+			"isRead": false,
+			"ISBN10": "0141046422"
+		},
+		{
+			"id": "2387",
+			"title": "Once",
+			"description": "Once by Morris Gleitzman is the story of a young Jewish boy who is determined to escape the orphanage he lives in to save his Jewish parents from the Nazis in the occupied Poland of the Second World War.",
+			"created_at": "2017-29-7",
+			"updated_at": "2017-12-7",
+			"published_at": "2017-28-1",
+			"publisher": "05709t4397209",
+			"stars": 130,
+			"isRead": true,
+			"ISBN10": "014132063X"
+		}
+	]
+}
