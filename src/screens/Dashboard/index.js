@@ -6,6 +6,7 @@ import cs from "classnames";
 import Authors from "./screens/Authors";
 import Books from "./screens/Books";
 import SideMenu from "./components/SideMenu";
+import ReadBooks from "./screens/Books/screens/Reads/index";
 
 // Styles
 import styles from "./index.module.scss";
@@ -22,7 +23,8 @@ function Dashboard() {
 						<div className="row justify-content-center">
 							<Switch>
 								<Route path="/dashboard/authors" component={Authors} />
-								<Route path="/dashboard/books" component={Books} />
+								<Route path="/dashboard/books" exact component={Books} />
+								<Route path="/dashboard/books/read" component={ReadBooks} />
 							</Switch>
 						</div>
 					</div>

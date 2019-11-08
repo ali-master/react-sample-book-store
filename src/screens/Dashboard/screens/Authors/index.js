@@ -6,6 +6,14 @@ import data from "./../../../../db/db.json";
 import Modal from "../../../../components/Modal";
 
 function Authors() {
+	const base = {
+		id: "index",
+		name: "Name",
+		surename: "Nick Name",
+		created_at: "Realese Date",
+		updated_at: "Last Modified",
+	};
+
 	return (
 		<div>
 			<form>
@@ -14,7 +22,7 @@ function Authors() {
 				<Button />
 				<Modal />
 			</form>
-			<Table data={data.authors} />
+			<Table data={data.authors} base={base} />
 		</div>
 	);
 }
