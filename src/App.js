@@ -5,13 +5,14 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
-	return (
-		<div className="App">
-			<BrowserRouter>
-				<Route path="/" component={Dashboard} />
-			</BrowserRouter>
-		</div>
-	);
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Route path="/dashboard" component={Dashboard} />
+
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
