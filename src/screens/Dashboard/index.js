@@ -1,36 +1,26 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import cs from "classnames";
+import * as React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-// Local components
-import Authors from "./screens/Authors";
-import Books from "./screens/Books";
-import SideMenu from "./components/SideMenu";
-import ReadBooks from "./screens/Books/screens/Reads/index";
+import Button from "../../components/Button";
+import { doLogin, doLogout } from "../../store/User/user.actions";
+import ImNotARobot from "./components/Robot";
 
-// Styles
-import styles from "./index.module.scss";
+function Dashboard(props) {
+	const userState = useSelector(({ user }) => user);
+	const dispatch = useDispatch();
 
-function Dashboard() {
 	return (
-		<div className="container-fluid">
-			<div className="row">
-				<div className="col-lg-3">
-					<SideMenu />
-				</div>
-				<div className="col-lg-9">
-					<div className={cs(styles["content"], "container")}>
-						<div className="row justify-content-center">
-							<Switch>
-								<Route path="/dashboard/authors" component={Authors} />
-								<Route path="/dashboard/books" exact component={Books} />
-								<Route path="/dashboard/books/read" component={ReadBooks} />
-							</Switch>
-						</div>
-					</div>
-				</div>
+		<div className="container">
+			<h1>I'm not a robot</h1>
+			<ImNotARobot />
+			<div>
+				<h1>User</h1>
+
+				<Button onClick={() => dispatch(doLogin({ name: "John", surename: "Doe", age: 30 }))}>Login</Button>
+				{userState.isLoggedIn && <Button onClick={() => dispatch(doLogout())}>Logout</Button>}
 			</div>
 		</div>
 	);
 }
+
 export default Dashboard;
